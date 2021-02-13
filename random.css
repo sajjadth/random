@@ -1,0 +1,109 @@
+@font-face{
+    font-family: Barlow-Light;
+    src: url(./File/Barlow-Light.ttf);
+}
+@font-face{
+    font-family: OpenSans-Regular;
+    src: url(./File/Montserrat-Regular.ttf)
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+body{
+    background-color: #000000;
+}
+.screan{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.output{
+    background-color: #202020;
+    font-size: 50px;
+    width: 295px;
+    height: 245px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 295px;
+    height: 245px;
+    border-top-right-radius: 10px;
+    background-color: #202020;
+}
+#val1,
+#val2{
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-bottom: 2.5px solid hsl(261, 43%, 70%);
+    outline: none;
+    background-color: transparent;
+}
+#val1:focus,
+#val2:focus{
+    border-bottom: 2.5px solid hsl(261, 43%, 50%);
+    transition: border-color 0.25s;
+}
+#val1::-webkit-inner-spin-button,
+#val2::-webkit-inner-spin-button,
+#val1::-webkit-outer-spin-button,
+#val2::-webkit-outer-spin-button{
+    appearance: none;
+    margin: 0;
+}
+#val1,
+#val2{
+    -moz-appearance: textfield;
+}
+.text{
+    margin: 0;
+    font-size: 20px;
+    text-align: right;
+    padding: 0 0 10px 0;
+}
+.generator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 595px;
+    height: 45px;
+}
+#submit{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: hsl(261, 43%, 50%);
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#submit:active{
+    border: none;
+    transition: background 0.25s , border 0.25s;
+}
